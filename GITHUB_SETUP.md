@@ -14,7 +14,7 @@ git push -u origin main
 
 3. One-click deploy:
 - Replace YOUR_USERNAME in README deploy button, or just go to vercel.com/new
-- Import `chopti` repo
+- Import `chopti_ng` repo
 - Add env vars from .env.local
 - Deploy
 
