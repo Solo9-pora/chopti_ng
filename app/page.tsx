@@ -74,7 +74,7 @@ export default function Page(){
               <div className="p-5">
                 <div className="mono text-[11px] text-[#8A8A90]">{selectedMeal.tag} • {selectedMeal.time} • {selectedMeal.kcal} kcal</div>
                 <h3 className="mt-4 font-semibold mono text-[12px]">DETAILED PREPARATION</h3>
-                <div className="mt-3 space-y-4">{selectedMeal.steps?.map((step:any,i:number)=><div key={i} className="p-3 rounded-xl bg-[#18181B] border border-[#1E1E22]"><div className="flex gap-2"><span className="w-6 h-6 rounded-full bg-[#A3FF12] text-black text-[11px] flex items-center justify-center font-bold">{i+1}</span><div><div className="font-medium text-[13px]">{step.title} • {step.time}</div><div className="mt-1 text-[12px] text-[#9CA3AF] leading-relaxed">{step.detail}</div>{step.tip && <div className="mt-2 p-2 rounded-lg bg-[#A3FF12]/10 border border-[#A3FF12]/20 text-[11px]">💡 Chef's tip: {step.tip}</div>}</div></div></div>)}</div>
+                <div className="mt-3 space-y-4">{selectedMeal.steps?.map((step:any,i:number)=><div key={i} className="p-3 rounded-xl bg-[#18181B] border border-[#1E1E22]"><div className="flex gap-2"><span className="w-6 h-6 rounded-full bg-[#A3FF12] text-black text-[11px] flex items-center justify-center font-bold">{i+1}</span><div><div className="font-medium text-[13px]">{step.title} • {step.time}</div><div className="mt-1 text-[12px] text-[#9CA3AF] leading-relaxed">{step.detail}</div>{step.tip && <div className="mt-2 p-2 rounded-lg bg-[#A3FF12]/10 border border-[#A3FF12]/20 text-[11px]">💡 Chef&apos;s tip: {step.tip}</div>}</div></div></div>)}</div>
               </div>
             </div>
           </div>
